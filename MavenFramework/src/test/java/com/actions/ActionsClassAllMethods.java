@@ -16,7 +16,6 @@ import org.testng.annotations.Test;
 
 public class ActionsClassAllMethods {
     public static WebDriver driver;
-//Normal ah yeluthavom
     @BeforeMethod
     public void preCondition() {
         driver = new ChromeDriver();
