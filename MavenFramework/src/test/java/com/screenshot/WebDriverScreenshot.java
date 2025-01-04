@@ -9,7 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.v125.page.model.FileHandler;
+
 
 public class WebDriverScreenshot {
 
@@ -22,7 +22,7 @@ public class WebDriverScreenshot {
         File temp = ts.getScreenshotAs(OutputType.FILE);
         File page = new File("./Screenshot/cskpage1.png");
         //FileUtils.copyFile(temp, page);
-        org.openqa.selenium.io.FileHandler.copy(temp, page);
+        FileUtils.copyFile(temp, page);
 	}
 
 }
